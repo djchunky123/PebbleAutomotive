@@ -1,25 +1,8 @@
-/*
-@font-face {
-  font-family: 'Liberation Sans';
-  src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-  */
-
-@font-face {
-  font-family: 'Liberation Sans';
-  src: url('fonts/LiberationSans-Bold.woff2') format('woff2'),
-       url('fonts/LiberationSans-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
 
 body {
     margin: 0;
-    font-family: 'Liberation Sans', sans-serif;
-    font-weight: bold;
+     font-family: 'Arimo', sans-serif;
+    font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.5;
@@ -42,22 +25,13 @@ body {
     height: 20vh;
     background-color: #0c0c0c;
 }
-h1 {
-    /* font-family: 'Great Vibes', cursive; */
-    font-size: 5em;
-    margin-bottom: 20px;
-}
 .car-outline img {
    width: 90vw;           /* 70% of the screen width */
     max-width: 600px;      /* Won’t go beyond this size */
     height: auto;
     margin: 30px 0;
 }
-h2 {
-    font-family: 'Cursive', sans-serif;
-    font-size: 2em;
-    margin: 20px 0;
-}
+
 
 /* thise section is for the nav bar between logo and carousel */
 .site-nav {
@@ -80,7 +54,6 @@ h2 {
     transition: background-color 0.3s ease, transform 0.2s;
 }
 .site-nav a:hover {
- 
     transform: scale(1.05);
 }
 
