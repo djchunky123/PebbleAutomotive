@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Pebble Automotive
+---
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image: url('/assets/slide1.jpg')">
+      <div class="slide-overlay">
+        <h2>PERFORMANCE PARTS</h2>
+    <!--<p>Crafted design, electric soul.</p>  -->
+        <a href="about.html" class="carousel-button">SHOP HERE</a>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('/assets/slide2.jpg')">
+      <div class="slide-overlay">
+        <h2>COILOVERS ROAD & TRACK</h2>
+     <!--<p>Where innovation meets elegance.</p> -->
+        <a href="gallery.html" class="carousel-button">View Gallery</a>
+      </div>
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    speed: 1000,
+  });
+</script>
