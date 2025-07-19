@@ -1,13 +1,29 @@
+/*
 @font-face {
   font-family: 'Liberation Sans';
   src: url('fonts/LiberationSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
+  */
+
+@font-face {
+  font-family: 'Liberation Sans';
+  src: url('fonts/LiberationSans-Bold.woff2') format('woff2'),
+       url('fonts/LiberationSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 body {
     margin: 0;
     font-family: 'Liberation Sans', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
     background-color: #2E3A4E;
     color: white;
      justify-content: center;
@@ -16,19 +32,6 @@ body {
     transform: scale(1);
     animation: zoomPage 1s ease-in-out forwards;
 }
-
-/* zoom in on page load from place holder page
-@keyframes zoomPage {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-*/
 
 /* this section is for top page logo */
 .container {
@@ -81,35 +84,9 @@ h2 {
     transform: scale(1.05);
 }
 
-/* this section is from the placeholder page for a notify me button and social buttons
-.notify-button {
-    background-color: white;
-    color: #2E3A4E;
-    border: none;
-    padding: 10px 20px;
-    font-size: 2em;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.notify-button:hover {
-    background-color: #ddd;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 100px;
-    height: 100px;
-}
-    */
-
     /* this section is for the carousel images */
 .swiper, .swiper-slide {
-  width: 100vw;
+  width: 99vw;
   height: 75vh;
 }
 .swiper-slide {
