@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #2E3A4E;
     color: white;
-    /* text-align: center; */
-     justify-content: center;
+    /* text-align: center;  */
+    justify-content: center;
     align-items: center;
     height: 100vh;
     transform: scale(1);
-    animation: zoomPage 1s ease-in-out forwards;
-}
+    animation: zoomPage 1s ease-in-out forwards; 
+}   
 
 @keyframes zoomPage {
     from {
